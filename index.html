@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDW 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/9764841-the-neighbourhood-wallpaper.jpg">
+    <meta property="og:image" content="assets/9764841-the-neighbourhood-wallpaper.jpg">
+</head>
+
+<body>
+
+    <video id="bg-video" muted loop>
+        <source src="assets/videoplayback.webm" type="video/webm">
+        Your browser does not support the video.
+    </video>
+    <div class="overlay"></div>
+
+    <div class="song-container">
+        <img src="assets/9764841-the-neighbourhood-wallpaper.jpg" alt="Song Cover" class="song-cover">
+        <div class="song-info">
+            <h2 class="song-title">8 Letters</h2>
+            <p class="song-artist">Why Don't We</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                </div>
+                <span class="time-display">0:00 / 4:12</span>
+            </div>
+            <div class="play-controls">
+                <button class="play-button" onclick="playPause()">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="pause-button" onclick="playPause()">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+            <div class="skip-controls">
+                <button onclick="skipBackward(10)">
+                    <i class="fas fa-backward"></i> <!-- Tombol Skip Backward -->
+                </button>
+                <button onclick="skipForward(10)">
+                    <i class="fas fa-forward"></i> <!-- Tombol Skip Forward -->
+                </button>
+            </div>
+        </div>
+        <audio src="assets/videoplayback.weba" class="song-track"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
